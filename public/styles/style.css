@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1280px;
+  padding: 40px;
+  margin: 0 auto;
+  font-family: sans-serif;
+  min-height: 500px;
+}
+
+.gallery, .info {
+  width: 45%;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .gallery,
+  .info {
+    width: 90%;
+  }
+}
+
+.price {
+  color: #910;
+}
+
+.slick-arrow {
+  width: 40px;
+  z-index: 1;
+}
+
+.slick-arrow:before {
+  color: #777;
+  font-size: 40px;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.options select {
+  width: 80px;
+}
+
+button {
+  display: block;
+  height: 40px;
+  width: 140px;
+  margin-top: 10px;
+  background-color: #000;
+  border: #000;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.success-message {
+  display: none;
+}
